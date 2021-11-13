@@ -15,10 +15,15 @@
             }
             .tops {
               border: 10px outset rgb(0, 141, 47);
-              background-color: lightblue;
+              /*background-color: lightblue;*/
               text-align: center;
             }
 
+            .bottoms {
+                border: 10px outset rgb(0, 141, 47);
+              /*background-color: lightblue;*/
+              text-align: center;
+            }
             .column {
                 float: left;
                 width: 20%;
@@ -39,32 +44,61 @@
     <body>
         <body style="background-color:rgb(240, 59, 59);">
         <h1>Connor's Christmas List</h1>
-        
 
-        <div class="tops";>
+        <div class="row">
+            <div class="column">
+                <a href="#tops">Tops</a>
+            </div>
+        </div>
+
+        <div class="tops"; id="tops">
             <h2>Tops</h2>
             <p>
                 Hoodies and sweaters are cool, preferably something bright
             </p>
             <figure>
                 <img src="images\colourBlock.png" alt="colour block hoodie">
-                <figcaption>Colour block hoodies are cool (bluenotes has one like this on sale right now!!)</figcaption>
+                <figcaption>Colour block hoodies are cool (bluenotes has one kinda like this on sale right now!!)</figcaption>
             </figure>
 
             <div class="row">
                 <div class="column">
-                  <img src="images\colourBlock.png" alt="Snow" style="width:100%">
+                  <img src="images\blue-stripes.png" alt="blue stripes" style="width:100%">
                 </div>
                 <div class="column">
-                  <img src="images\colourBlock.png" alt="Forest" style="width:100%">
+                  <img src="images\green-sweater.png" alt="Forest" style="width:100%">
                 </div>
                 <div class="column">
-                  <img src="images\colourBlock.png" alt="Mountains" style="width:100%">
+                  <img src="images\white-sweater.png" alt="Mountains" style="width:100%">
                 </div>
+                <div class="column">
+                    <img src="images\white-sweater.png" alt="Mountains" style="width:100%">
+                  </div>
               </div>
         </div>
 
-        <div class="bottom";>
+        <div class="bottoms"; id="bottoms">
+            <h2>Bottoms</h2>
+            <p>
+                Anything bottom and comfy and made for legs, preferably a dark colour
+            </p>
+            <div class="row">
+                <div class="column">
+                  <img src="images\blue-stripes.png" alt="blue stripes" style="width:100%">
+                </div>
+                <div class="column">
+                  <img src="images\green-sweater.png" alt="Forest" style="width:100%">
+                </div>
+                <div class="column">
+                  <img src="images\white-sweater.png" alt="Mountains" style="width:100%">
+                </div>
+                <div class="column">
+                    <img src="images\white-sweater.png" alt="Mountains" style="width:100%">
+                  </div>
+              </div>
+        </div>
+
+        <div class="bottom"; id="bottom">
             <!--A tweet button cause why not-->
             <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-text="Check out this cool website!" data-url="https://alphaq13.github.io/2021-christmas-list/" data-hashtags="ConnorsChristmasList2021" data-lang="en" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
