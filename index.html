@@ -9,10 +9,29 @@
 
         <style>
             h1 {text-align: center;}
-
+            
+            img {
+                max-width: 300px;
+            }
             .tops {
               border: 10px outset rgb(0, 141, 47);
               background-color: lightblue;
+              text-align: center;
+            }
+
+            .column {
+                float: left;
+                width: 20%;
+                padding: 5px;
+            }
+            /* Clearfix (clear floats) */
+            .row::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+
+            .bottom {
               text-align: center;
             }
         </style>
@@ -28,12 +47,26 @@
                 Hoodies and sweaters are cool, preferably something bright
             </p>
             <figure>
-                <img src="images\colourBlock.png" alt="colour block hoodie" >
-                <figcaption>Colour block hoodie (bluenotes has one on sale right now)</figcaption>
+                <img src="images\colourBlock.png" alt="colour block hoodie">
+                <figcaption>Colour block hoodies are cool (bluenotes has one like this on sale right now!!)</figcaption>
             </figure>
+
+            <div class="row">
+                <div class="column">
+                  <img src="images\colourBlock.png" alt="Snow" style="width:100%">
+                </div>
+                <div class="column">
+                  <img src="images\colourBlock.png" alt="Forest" style="width:100%">
+                </div>
+                <div class="column">
+                  <img src="images\colourBlock.png" alt="Mountains" style="width:100%">
+                </div>
+              </div>
         </div>
 
-        <!--A tweet button cause why not-->
-        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-text="Check out this cool website!" data-url="https://alphaq13.github.io/2021-christmas-list/" data-hashtags="ConnorsChristmasList2021" data-lang="en" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <div class="bottom";>
+            <!--A tweet button cause why not-->
+            <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-text="Check out this cool website!" data-url="https://alphaq13.github.io/2021-christmas-list/" data-hashtags="ConnorsChristmasList2021" data-lang="en" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
     </body>
 </html>
